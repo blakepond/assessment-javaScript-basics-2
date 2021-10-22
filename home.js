@@ -22,8 +22,8 @@
 */
 
 //CODE HERE
-
-
+const greetUser = (username) => `Welcome back, ${username}`
+// console.log(greetUser("Blake"))
 
 
 
@@ -50,6 +50,16 @@
 const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 
 //CODE HERE
+const canWeDeliver = (zipCode) => {
+    for (let i = 0; i < deliveryAreaZipCodes.length; i++)
+        if (zipCode === deliveryAreaZipCodes[i]){
+            return console.log("You're in our delivery zone!")
+        }
+        else return console.log("Sorry we can't deliver to that address.")
+}      
+
+// canWeDeliver(83406)
+
 
 
 
@@ -71,7 +81,17 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 */
 
 // CODE HERE
+const canWeDeliver2 = (zipCode) => {
+    if (deliveryAreaZipCodes.includes(zipCode)) {
+        console.log("You're in our delivery zone!")
+    } else console.log("Sorry, you're not in our delivery zone")
+        
+        // return console.log("Sorry, you're not in our deliver zone.")
+       
+    }
 
+       
+// canWeDeliver2(83406)
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -106,7 +126,11 @@ const deals = [
     to replace the 15 with a 10.
 */
 
-//CODE HERE
+const newDeal = deals.title
+
+console.log(deals[title])
+
+
 
 
 
