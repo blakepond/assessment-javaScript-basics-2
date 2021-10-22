@@ -31,6 +31,15 @@
 */
 
 //CODE HERE
+let pizza = {
+    name: "Pepperorni",
+    price: 5,
+    category: "entree",
+    popularity: 10,
+    rating: 9,
+    tags: ["kids", "gluten-free"]
+}
+
 
 
 
@@ -42,7 +51,7 @@
     Use dot notation to access the value.
 */
 
-//CODE HERE
+console.log(pizza.popularity)
 
 
 /*
@@ -52,7 +61,7 @@
     get the value.
 */
 
-//CODE HERE
+console.log(pizza.tags[1])
 
 
 /*
@@ -62,7 +71,12 @@
     Print the value of your new price variable.
 */
 
-//CODE HERE
+let {price} = pizza
+
+
+// pizza.price = 12
+console.log(price)
+
 
 
 /*
@@ -72,7 +86,8 @@
     Print the value of your category variable. 
 */
 
-//CODE HERE
+let {category} = pizza
+console.log(category)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -87,7 +102,49 @@
     data in some functions that you'll write.
 */
 
-//CODE HERE
+let foodArr = [
+    {
+        name: "burger",
+        price: 4,
+        category: "entree",
+        popularity: 9,
+        rating: 8,
+        tags: ["kids", "gluten-free"]
+    },
+    {
+        name: "wings",
+        price: 7,
+        category: "appetizer",
+        popularity: 9,
+        rating: 10,
+        tags: ["boneless", "bone-in"]
+    },
+    {
+        name: "frenchfries",
+        price: 3,
+        category: "side",
+        popularity: 10,
+        rating: 5,
+        tags: ["cheese", "original"]
+    },
+    {
+        name: "steak",
+        price: 15,
+        category: "entree",
+        popularity: 10,
+        rating: 9,
+        tags: ["medium-rare", "rare"]
+    },
+    {
+        name: "salad",
+        price: 5,
+        category: "side",
+        popularity: 5,
+        rating: 10,
+        tags: ["ceasar", "blu-cheese"]
+    }
+]
+    
 
 
 
@@ -103,9 +160,19 @@
     your food objects has.
 */
 
-//CODE HERE
 
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
+
+const filteredFood = foodArr.filter(element => {
+    for (let element in foodArr){
+        element === true
+        return foodArr.tags
+    }
+
+})
+console.log(filteredFood(foodArr))
+
+
+
 
 
 
