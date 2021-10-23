@@ -53,12 +53,13 @@ const deliveryAreaZipCodes = [85205, 85204, 85203, 85213, 85206]
 const canWeDeliver = (zipCode) => {
     for (let i = 0; i < deliveryAreaZipCodes.length; i++)
         if (zipCode === deliveryAreaZipCodes[i]){
-            return console.log("You're in our delivery zone!")
+            return "You're in our delivery zone!"
         }
-        else return console.log("Sorry we can't deliver to that address.")
+        else 
+            return "Sorry we can't deliver to that address."
 }      
 
-// canWeDeliver(83406)
+// console.log(canWeDeliver(85205))
 
 
 
@@ -83,15 +84,16 @@ const canWeDeliver = (zipCode) => {
 // CODE HERE
 const canWeDeliver2 = (zipCode) => {
     if (deliveryAreaZipCodes.includes(zipCode)) {
-        console.log("You're in our delivery zone!")
-    } else console.log("Sorry, you're not in our delivery zone")
+        return "You're in our delivery zone!"
+    } else 
+        return "Sorry, you're not in our delivery address"
         
         // return console.log("Sorry, you're not in our deliver zone.")
        
     }
 
        
-// canWeDeliver2(83406)
+// console.log(canWeDeliver2(83406))
 
 //////////////////PROBLEM 3////////////////////
 /* 
@@ -125,11 +127,9 @@ const deals = [
     to be itself, but use the `replace` method
     to replace the 15 with a 10.
 */
+deals[0].title = deals[0].title.replace(15,10)
 
-const newDeal = deals.title
-
-console.log(deals[title])
-
+// console.log(deals[0])
 
 
 
@@ -147,4 +147,6 @@ console.log(deals[title])
     to be displaying wrong on the live site.
 */
 
-//CODE HERE
+deals[1].desc = deals[1].desc.trim().replace("March", "April")
+console.log(deals[1].desc)
+
