@@ -254,4 +254,4 @@ const filterByProperty = (property,number,type) => {
     You'll have to console.log to see the filtered array
 */
 
-console.log(filterByProp())
+console.log(filterByProperty(1,2,3))
