@@ -36,6 +36,13 @@ const cart = [
 //CODE HERE
 
 // const summedPrice = cart.reduce(/* CALLBACK HERE */)
+const summedPrice = cart.reduce(function(acc, curr) {
+  return {price: acc.price + curr.price}
+     
+  
+    
+})
+// console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -54,7 +61,11 @@ const cart = [
 */
 
 //CODE HERE
-
+const calcFinalPrice = (cartTotal,couponValue, tax) => {
+    
+    return (cartTotal += cartTotal * tax) - couponValue
+}
+// console.log(calcFinalPrice(100, 10, .06))
 
 
 //////////////////PROBLEM 3////////////////////
@@ -77,14 +88,27 @@ const cart = [
     Your object should have at least 4 properties. 
 */
 
+
+
 /*
     TEXT ANSWER HERE
 
+dine in or take out: determine if customer is dine in or take out
+customer quantity: if dining in how many guest will need to be seated
+any children: if there are children will they need a booster seat? they will need a kids menu 
+order: order placed
+cash or credit: determine method of payment
 */
 
 /*
     Now, create a customer object following your own
     guidelines.
 */
-
+let cartPage = {
+    customerType: "Dine-In or Take Out?",
+    customerQuantity: "How many guests are there?",
+    children: "Do you have any Children? Will they need a booster seat? Provide kids menu",
+    order: "Please place order",
+    paymentMethod: "Cash or Credit"
+}
 //CODE HERE
