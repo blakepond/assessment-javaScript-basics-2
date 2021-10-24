@@ -20,6 +20,15 @@
 */
 
 //CODE HERE
+class Employee {
+    constructor(name, shifts) {
+    this.name = name
+    this.shifts = shifts
+    }
+    getSchedule() {
+        console.log(`${this.name} works on ${this.shifts}`)
+    }
+}
 
 
 
@@ -32,14 +41,14 @@
     name: Jess
     shifts: weekday mornings, weekday afternoons
 */
-
+let empOne = new Employee ("Blake", "Night Shift")
 //CODE HERE
 
 /*
     Call the `getSchedule` method on the
     `empOne` object.
 */
-
+empOne.getSchedule()
 //CODE HERE
 
 
@@ -54,7 +63,7 @@
     spread operator or reassign it using 
     dot or bracket notation.
 */
-
+// const empTwo = {...empOne, name: "Nick"};
 //CODE HERE
 
 
@@ -96,6 +105,7 @@
     shifts: weekday mornings, weekday afternoons
     employees: Cece and Schmidt
 */
+
 
 //CODE HERE
 
